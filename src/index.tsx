@@ -18,9 +18,9 @@ const BeautyStars: FC<Props> = ({
   maxStars = 5,
   value = 0,
   onChange,
-  activeColor = COLORS.active,
+
   inactiveColor = COLORS.inactive,
-  size = 36,
+
   editable = true,
   gap = 16,
   hideInactive = false
@@ -52,9 +52,6 @@ const BeautyStars: FC<Props> = ({
         >
           <Star
             selected={starNumber <= value}
-            activeColor={activeColor}
-            inactiveColor={inactiveColor}
-            size={size}
           />
         </li>
       ))}
